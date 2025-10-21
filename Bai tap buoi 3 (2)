@@ -1,0 +1,107 @@
+Cau 1
+package Buoi6;
+import java.util.Scanner;
+public class Baitapbuoi3 {
+	
+
+
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+
+	        System.out.print("Nhap so thu nhat: ");
+	        int m = sc.nextInt();
+	        System.out.print("Nhap so thu hai: ");
+	        int n = sc.nextInt();
+
+	        int max = (m > n) ? m : n;
+
+	        System.out.println("So lon nhat la: " + max);
+	    }
+	}
+Cau 2
+package Buoi6;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Baitapbuoi3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] a = new int[3];
+
+        System.out.print("Nhap so thu nhat: ");
+        a[0] = scanner.nextInt();
+        System.out.print("Nhap so thu hai: ");
+        a[1] = scanner.nextInt();
+        System.out.print("Nhap so thu ba: ");
+        a[2] = scanner.nextInt();
+
+        Arrays.sort(a);
+        System.out.println("Thu tu tang dan: " + a[0] + ", " + a[1] + ", " + a[2]);
+    }
+}
+Cau 3
+package Buoi6;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Baitapbuoi3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] a = new int[3];
+
+        System.out.print("Nhap so thu nhat: ");
+        a[0] = scanner.nextInt();
+        System.out.print("Nhap so thu hai: ");
+        a[1] = scanner.nextInt();
+        System.out.print("Nhap so thu ba: ");
+        a[2] = scanner.nextInt();
+
+        Arrays.sort(a);
+
+        System.out.println("Ban muon xuat theo thu tu nao?");
+        System.out.println("1. Tang dan");
+        System.out.println("2. Giam dan");
+        int chon = scanner.nextInt();
+
+        if (chon == 1) {
+            System.out.println("Tang dan: " + a[0] + ", " + a[1] + ", " + a[2]);
+        } else if (chon == 2) {
+            System.out.println("Giam dan: " + a[2] + ", " + a[1] + ", " + a[0]);
+        } else {
+            System.out.println("Lua chon khong hop le!");
+        }
+    }
+}
+Cau 4
+package Buoi6;
+import java.util.Scanner;
+
+
+public class Baitapbuoi3 {
+
+
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+
+	        System.out.print("Nhap so nguyen co hai chu so: ");
+	        int n = scanner.nextInt();
+
+	        if (n < 10 || n > 99) {
+	            System.out.println("Khong phai so co hai chu so!");
+	            return;
+	        }
+
+	        int hangChuc = n / 10;
+	        int hangDonVi = n % 10;
+
+	        String[] so = {"khong", "mot", "hai", "ba", "bon", "nam", "sau", "bay", "tam", "chin"};
+
+	        System.out.print("Cach doc: ");
+	        System.out.print(so[hangChuc] + " muoi ");
+	        if (hangDonVi != 0) {
+	            System.out.print(so[hangDonVi]);
+	        }
+	    }
+	}
+
+
