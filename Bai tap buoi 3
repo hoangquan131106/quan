@@ -1,0 +1,37 @@
+package Buoi6;
+import java.util.Scanner;
+public class Buoi3 {
+	
+
+	
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+
+	        System.out.print("Nhap ten mat hang: ");
+	        String tenMatHang = scanner.nextLine();
+
+	        System.out.print("Nhap so luong: ");
+	        int soLuong = scanner.nextInt();
+
+	        System.out.print("Nhap don gia: ");
+	        double donGia = scanner.nextDouble();
+
+	        double tongTien = soLuong * donGia;
+	        double giamGia = 0;
+
+	        if (soLuong >= 50 && soLuong <= 100) {
+	            giamGia = tongTien * 0.08;
+	        } else if (soLuong > 100) {
+	            giamGia = tongTien * 0.12;
+	        }
+
+	        double tienPhaiTra = tongTien - giamGia;
+
+	        System.out.println("\n THONG TIN HOA DON ");
+	        System.out.println("Ten mat hang: " + tenMatHang);
+	        System.out.println("So luong: " + soLuong);
+	        System.out.println("Don gia: " + donGia);
+	    
+	       System.out.println("Tien phai tra: " + tienPhaiTra);
+	    }
+	}
