@@ -1,0 +1,101 @@
+Cau 1
+package Baitap;
+import java.util.Scanner;
+public class baitapbuoi3 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nhap so nguyen n: ");
+        int n = scanner.nextInt();
+        System.out.println(n > 0? "So duong" : "So am hoac bang 0");
+    }
+}
+Cau 2 
+package Baitap;
+import java.util.Scanner;
+public class baitapbuoi3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);              
+         System.out.print("Nhap tuoi: ");
+                int age = scanner.nextInt();
+                System.out.println(age >= 18 ? "Đu tuoi di bau" : "Chưa du tuoi");
+            }
+        }
+
+ 
+Cau 3 
+package Baitap;
+import java.util.Scanner;
+public class baitapbuoi3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);              
+        System.out.print("Nhap x: ");
+        int x = scanner.nextInt();
+
+        System.out.println(x > 0 ? "Duong" : (x < 0 ? "Am" : "Bang 0"));
+ 
+        }
+}
+Cau 4 
+package Baitap;
+import java.util.Scanner;
+public class baitapbuoi3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);              
+        System.out.print("Nhap a: ");
+        int a = scanner.nextInt();
+        System.out.print("Nhap b: ");
+        int b = scanner.nextInt();
+        System.out.print("Nhap c: ");
+        int c = scanner.nextInt();
+
+        System.out.println((a > b && a > c) ? a : (b > c ? b : c));
+    }
+}
+Cau 5 
+package Baitap;
+import java.util.Scanner;
+public class baitapbuoi3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);              
+        System.out.print("Nhap luong hien tai: ");
+        double salary = scanner.nextDouble();
+        System.out.print("Nhap so nam kinh nghiem: ");
+        int years = scanner.nextInt();
+        salary = salary + (years > 5 ? salary * 0.1 : salary * 0.05);
+
+        System.out.println("Luong sau tang: " + salary);
+    }
+}
+Cau 6 
+package Baitap;
+import java.util.Scanner;
+public class baitapbuoi3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);              
+        System.out.print("Nhap muc thu nhap (trieu dong): ");
+        int income = scanner.nextInt();  
+        double taxRate;             
+        
+        switch (income / 10) {
+            case 0:
+                taxRate = 0.0;      
+                break;
+            case 1:
+            case 2:
+                taxRate = 0.10;    
+                break;
+            case 3:
+            case 4:
+                taxRate = 0.15;     
+                break;
+            default:
+                taxRate = 0.20;     
+                break;
+        }
+        double tax = income * taxRate;
+        System.out.println("Thu nhap: " + income + " trieu đong");
+        System.out.println("Thue suat: " + (taxRate * 100) + "%");
+        System.out.println("Tien thue phai dong: " + tax + " trieu đong");
+    }
+}
